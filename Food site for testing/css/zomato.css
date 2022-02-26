@@ -1,0 +1,657 @@
+.body {
+    user-select: none;
+    overflow: hidden;
+}
+
+.overall-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.top-nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1vh;
+    /* background-color: whitesmoke; */
+}
+
+.top-nav-bar-zomato-icon>img {
+    height: 4vh;
+    margin-top: 4vh;
+    margin-left: 5vw;
+}
+
+.top-nav-bar-search-bar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2.4vh;
+    transition: .8s;
+}
+
+.svgs {
+    position: relative;
+    left: 3vw;
+    top: 1vw;
+    /* display: flex; */
+}
+
+.top-nav-bar-search-icon-city {
+    display: flex;
+    flex-wrap: wrap;
+    outline: none;
+    border: none;
+    height: 7vh;
+    transition: .8s;
+    text-align: center;
+    justify-content: space-between;
+    box-shadow: 2px 8px 20px rgb(219, 218, 218);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.top-nav-bar-search-icon-city:hover {
+    box-shadow: 2px 8px 20px rgb(187, 186, 186);
+}
+
+.top-nav-bar-search-bar-search {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    outline: none;
+    height: 7vh;
+    border: none;
+    transition: .8s;
+    width: 44vw;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 2px 8px 20px rgb(219, 218, 218);
+    border-radius: 0.5rem;
+}
+
+.search-icon {
+    position: relative;
+    left: 2000px;
+}
+
+.top-nav-bar-search-bar-search :hover {
+    box-shadow: 2px 10px 20px rgb(187, 186, 186);
+    width: 1000px;
+}
+
+.top-nav-bar-logsig {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 3vh;
+}
+
+.top-nav-bar-login,
+.top-nav-bar-signup {
+    margin-right: 40px;
+    color: rgb(20, 17, 17);
+    user-select: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.6rem;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+
+.top-nav-bar-login:hover {
+    transform: scale(1.2);
+}
+
+.top-nav-bar-signup:hover {
+    transform: scale(1.2);
+}
+
+.delivdiningnightlife {
+    display: flex;
+    /* position: sticky; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 100vw;
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
+
+.cart {
+    color: rgb(214, 35, 35);
+}
+
+.cart>.btn {
+    transition: .5s;
+    box-shadow: 2px 4px 8px rgb(189, 188, 188);
+}
+
+.cart>.btn:hover {
+    transform: scale(1.3);
+    box-shadow: 2px 4px 8px rgb(136, 135, 135);
+}
+.btn-warning {
+    color: rgb(219, 28, 28);
+    background-color: #16cb77;
+    border-color: #16cb77;
+}
+
+.badge {
+    font-size: large;
+}
+
+.delivery,
+.diningout,
+.nightlife {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-bottom: 2vh; */
+}
+
+.delivery>img,
+.diningout>img,
+.nightlife>img {
+    /* object-fit: cover; */
+    height: 3rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.delivery>h3,
+.diningout>h3,
+.nightlife>h3 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    cursor: pointer;
+    color: grey;
+}
+
+.delivery>h3 {
+    color: rgb(228, 62, 62);
+}
+
+.delivery {
+    padding-bottom: 2vh;
+    border-bottom-color: rgb(235, 64, 64);
+    border-bottom-width: 0.22rem;
+    border-bottom-style: solid;
+}
+
+.Ad {
+    display: flex;
+    justify-content: center;
+}
+
+.Ad>img {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.filtersbar {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    /* margin-left: 10%; */
+    margin-bottom: 10vh;
+    justify-content: center;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 10vw;
+    display: none;
+    position: relative;
+    top: 7vh;
+}
+
+.dropdown>button {
+    background-color: #56da22;
+    color: black;
+    padding: 1% 2%;
+    box-shadow: 2px 4px 8px rgb(189, 187, 187);
+}
+
+.dropdown-item {
+    font-size: large;
+}
+
+.filters,
+.rating,
+.safe,
+.pureveg,
+.deliverytime,
+.greatoffers,
+.btn-group>.btn-primary,
+.dropdown-toggle,
+.btn-group>.btn {
+    margin-right: 1vw;
+    transition: 0.8s;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border: 1px solid rgb(207, 207, 207);
+    padding: 0.3rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    box-shadow: rgb(54 54 54 / 6%) 0px 1px 2px;
+    color: rgb(156, 156, 156);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    /* font-size: 1.4rem; */
+    font-family: Okra, Helvetica, sans-serif;
+}
+
+.btn-group>.btn-primary:hover {
+    margin-right: 1vw;
+    transition: 0.8s;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border: 1px solid rgb(207, 207, 207);
+    padding: 0.3rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    box-shadow: rgb(54 54 54 / 6%) 0px 1px 2px;
+    color: rgb(156, 156, 156);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    /* font-size: 1.4rem; */
+    font-family: Okra, Helvetica, sans-serif;
+}
+
+.filters:hover {
+    box-shadow: 1px 1px 5px;
+    transform: scale(1.06);
+}
+
+.rating:hover {
+    box-shadow: 1px 1px 5px;
+    transform: scale(1.06);
+}
+
+.safe:hover {
+    box-shadow: 1px 1px 5px;
+    transform: scale(1.06);
+}
+
+.pureveg:hover {
+    box-shadow: 1px 1px 5px;
+    transform: scale(1.06);
+}
+
+.deliverytime:hover {
+    box-shadow: 1px 1px 5px;
+    transform: scale(1.06);
+}
+
+.greatoffers:hover {
+    box-shadow: 1px 1px 5px;
+    transform: scale(1.06);
+}
+
+.inspiration-order-box {
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.inspiration-order-text {
+    margin-left: 3vw;
+    font-size: 33px;
+    display: flex;
+    margin-bottom: 4vh;
+    font-weight: 400;
+    letter-spacing: .2vw;
+    justify-content: center;
+    user-select: none;
+}
+
+.inspiration-order-food-card-container {
+    /* margin-left: 10vw; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 5vh;
+    justify-content: center;
+}
+
+.btn-group {
+    display: none;
+}
+
+.card,
+.card1,
+.card2,
+.card3 {
+    cursor: pointer;
+    margin-right: 2vw;
+    max-width: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    border-radius: 5%;
+    box-shadow: 2px 4px 8px rgb(163, 163, 163);
+    transition: .6s;
+    /* You can remove this if this violates responsiveness */
+    max-height: 70vh;
+}
+
+.card:hover {
+    box-shadow: 4px 8px 16px grey;
+    transform: scale(1.06);
+    z-index: 1;
+}
+
+.top-brands-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.top-brand-card-container {
+    /* margin-left: 10vw; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.best-food-in-agra-overall-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-bottom: 10vh;
+}
+
+.best-food-in-agra-container1,
+.best-food-in-agra-container2,
+.best-food-in-agra-container3,
+.best-food-in-agra-container4,
+.best-food-in-agra-container5 {
+    margin-bottom: 5vh;
+}
+
+.card-img-top {
+    border-radius: 5%;
+    max-height: 35vh;
+    object-fit: cover;
+}
+
+.card-body>.btn {
+    /* margin-left: 15vw; */
+    /* margin-top: 2vh; */
+    box-shadow: 2px 4px 8px grey;
+    transition: .6s;
+    margin-bottom: 2vh;
+}
+
+.card-body>.btn:hover {
+    box-shadow: 4px 8px 16px rgb(48, 47, 47);
+    transform: scale(1.1);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.explore-other-options-text {
+    margin-left: 10vw;
+    font-size: 33px;
+    display: flex;
+    margin-bottom: 4vh;
+    font-weight: 400;
+    letter-spacing: .2vw;
+    /* justify-content: center; */
+    user-select: none;
+}
+
+.popular-cuisines-near,
+.popular-restaurants-text,
+.cities-we-deliver-text {
+    margin-left: 10vw;
+    font-size: 28px;
+    display: flex;
+    margin-bottom: 4vh;
+    font-weight: 400;
+    letter-spacing: .2vw;
+    /* justify-content: center; */
+    user-select: none;
+}
+
+.popular-cuisines-names,
+.popular-restaurants-names {
+    margin-left: 10vw;
+    font-size: 17px;
+    display: flex;
+    margin-bottom: 4vh;
+    font-weight: 200;
+    color: rgb(130, 130, 130);
+    cursor: pointer;
+    /* letter-spacing: .2vw; */
+    /* justify-content: center; */
+    user-select: none;
+    margin-bottom: 15vh;
+    transition: .5s;
+}
+
+.popular-cuisines-names:hover {
+    transform: scale(1.03);
+}
+
+.popular-restaurants-names:hover {
+    transform: scale(1.03);
+}
+
+.cities-container-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.cities-we-deliver-box {
+    margin-bottom: 10vh;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+
+.cities {
+    cursor: pointer;
+    color: rgb(130, 130, 130);
+    transition: .6s;
+}
+
+.cities:hover {
+    transform: scale(1.08);
+}
+
+.ending-box {
+    background-color: rgb(248, 248, 248);
+}
+
+.end-bar {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    /* margin-bottom: 5vh; */
+}
+
+.zomato-icon>img {
+    height: 4vh;
+    margin-top: 4vh;
+    margin-left: 1vw;
+}
+
+.other-links-outer-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.company,
+.for-foodies,
+.for-restaurants,
+.for-you,
+.social-links {
+    font-weight: 500;
+    margin-bottom: 4vh;
+}
+
+.company-links,
+.for-foodies-links,
+.for-restaurants-links,
+.for-you-links {
+    color: rgb(119, 111, 111);
+    cursor: pointer;
+}
+
+.language-country-box {
+    display: flex;
+    justify-content: center;
+}
+
+.country-button {
+    justify-content: center;
+    align-items: center;
+}
+
+.by-continuing {
+    color: rgb(79, 79, 79);
+    margin-top: 2.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-family: Okra, Helvetica, sans-serif;
+    font-size: small;
+    margin-bottom: 8vh;
+}
+
+@media only screen and (max-width: 1024px) {
+    .svgs {
+        left: 4vw;
+        top: 1.51vh;
+    }
+    .search-icon {
+        display: none;
+    }
+    .top-nav-bar-search-bar-search {
+        display: none;
+    }
+    .delivdiningnightlife {
+        margin-left: 1vw;
+        flex-direction: row;
+        max-width: 100%;
+    }
+    .card {
+        margin-right: 1vw;
+        max-width: 100%;
+        margin-bottom: 3vh;
+        max-height: 75vh;
+    }
+    .inspiration-order-food-card-container {
+        margin-left: 2vw;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .search-icon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .top-nav-bar-search-icon-city {
+        display: none;
+    }
+    .Ad {
+        display: none;
+    }
+    .svgs {
+        display: none;
+    }
+    .top-nav-bar-login {
+        display: none;
+    }
+    .top-nav-bar-signup {
+        display: none;
+    }
+    .btn-group {
+        display: flex;
+        margin-right: 2vw;
+    }
+    .top-nav-bar-zomato-icon>img {
+        align-items: center;
+        justify-content: center;
+        margin-left: 27vw;
+    }
+    .delivery,
+    .diningout,
+    .nightlife {
+        margin-bottom: 2vh;
+    }
+    .card {
+        max-height: 80vh;
+    }
+    .card-body>.btn {
+        box-shadow: 2px 4px 8px grey;
+        transition: .6s;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .card-body>.btn:hover {
+        box-shadow: 4px 8px 16px rgb(48, 47, 47);
+        transform: scale(1.05);
+    }
+    .language-country-box {
+        margin-top: 24px;
+    }
+    .dropdown {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        display: none;
+        position: relative;
+        top: 17vh;
+    }
+    .totalamount {
+        justify-content: center;
+        position: relative;
+        top: -2vh;
+    }
+}
+
+@media only screen and (max-width: 275px) {
+    .btn-group {
+        display: flex;
+        justify-content: center;
+        margin-left: 40vw;
+        margin-right: 50vw;
+    }
+}
