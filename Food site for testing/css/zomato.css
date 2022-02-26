@@ -372,7 +372,7 @@
     justify-content: center;
 }
 
-.best-food-in-agra-overall-container {
+.best-food-in-Patiala-overall-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -384,11 +384,11 @@
     margin-bottom: 10vh;
 }
 
-.best-food-in-agra-container1,
-.best-food-in-agra-container2,
-.best-food-in-agra-container3,
-.best-food-in-agra-container4,
-.best-food-in-agra-container5 {
+.best-food-in-Patiala-container1,
+.best-food-in-Patiala-container2,
+.best-food-in-Patiala-container3,
+.best-food-in-Patiala-container4,
+.best-food-in-Patiala-container5 {
     margin-bottom: 5vh;
 }
 
