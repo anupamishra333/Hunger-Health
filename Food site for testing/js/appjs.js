@@ -113,7 +113,7 @@ function gotostore() {
     document.getElementById("totalamount").innerHTML = '';
     document.getElementById("dropdown").style.display = "none";
 
-    document.getElementById("best-food").innerHTML = "Best Food in Agra"
+    document.getElementById("best-food").innerHTML = "Best Food in Patiala"
     document.getElementById("best-food").marginBottom = "4vh"
     document.getElementById("best-food").style.fontSize = "30px";
     document.getElementById("best-food").style.textDecoration = "flex";
