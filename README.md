@@ -5,5 +5,5 @@ The majority of people buy food from online food delivery services, but many tim
 Therefore, we came up with the idea of providing them with healthy food based on their health.
 
 ## Team-mates
-![image](https://user-images.githubusercontent.com/85924533/160448747-bac03883-5ca3-414b-8230-67278ee51591.png)
+![image](https://user-images.githubusercontent.com/85924533/160449132-a49fce32-105c-498d-bf9a-5620a0036c95.png)
 
